@@ -7,12 +7,12 @@
 function sumTwoNumbers($numbers,$target){
 	for($index = 0; $index < count($numbers); $index++){
 		$_number = $target - $numbers[$index];
-		
+
 		if(in_array($_number,$numbers)){
 			return [$numbers[$index],$_number];
 		}
 	}
-	
+
 	throw new Exception("Target no encontrado");
 }
 
